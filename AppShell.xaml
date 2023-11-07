@@ -6,9 +6,36 @@
     xmlns:local="clr-namespace:DvijCShapr"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
+    <TabBar>
+
+       
+        <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" />-->
+
+        <ShellContent
+        Title="Профиль"
+        ContentTemplate="{DataTemplate local:ProfilePage}"
+        Route="ProfilePage" />
+
+        <ShellContent
+        Title="Мероприятия"
+        ContentTemplate="{DataTemplate local:MeetingsPage}"
+        Route="MeetingsPage" />
+
+        <ShellContent
+        Title="Заведения"
+        ContentTemplate="{DataTemplate local:PlacesPage}"
+        Route="PlacesPage" />
+
+        <ShellContent
+        Title="Акции"
+        ContentTemplate="{DataTemplate local:StocksPage}"
+        Route="StocksPage" />
+        
+    </TabBar>
+    
+    
 
 </Shell>
