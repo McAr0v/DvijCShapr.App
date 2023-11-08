@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DvijCShapr.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DvijCShapr"
+    Shell.FlyoutBehavior="Disabled">
 
-<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-      xmlns:local="clr-namespace:DvijCShapr"
-      Shell.FlyoutBehavior="Disabled">
+    <TabBar>
 
-    <FlyoutItem Title="Профиль">
-        <local:ProfilePage />
-    </FlyoutItem>
+        <Tab Title="Мероприятия">
 
-    <FlyoutItem Title="Заведения">
-        <local:PlacesPage />
-    </FlyoutItem>
+            <ShellContent
+                Title="Мероприятия"
+                ContentTemplate="{DataTemplate local:MeetingsPage}"
+                Route="MeetingsPage" />
+            <ShellContent
+                Title="Акции"
+                ContentTemplate="{DataTemplate local:StocksPage}"
+                Route="StocksPage" />
+            <ShellContent
+                Title="Профиль"
+                ContentTemplate="{DataTemplate local:ProfilePage}"
+                Route="ProfilePage" />
+            </Tab>
+        <ShellContent
+            Title="Заведения"
+            ContentTemplate="{DataTemplate local:PlacesPage}"
+            Route="PlacesPage" />
+       
+    </TabBar>
 
-    <FlyoutItem Title="Акции">
-        <local:StocksPage />
-    </FlyoutItem>
-
-    <FlyoutItem Title="Мероприятия">
-        <ShellSection Title="Лента">
-            <local:StockFavPage />
-        </ShellSection>
-        <ShellSection Title="Избранные">
-            <local:StocksAllPage />
-        </ShellSection>
-        
-    </FlyoutItem>
 </Shell>
-
-
-
-
-
