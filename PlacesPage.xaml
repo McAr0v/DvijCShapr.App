@@ -5,7 +5,7 @@
              Title="PlacesPage">
     <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
         <Label 
-            Text="PlacesPage"
+            Text="PlacesPage with changes"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
