@@ -5,7 +5,7 @@
              Title="MeetingsPage">
     <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Label 
-            Text="MeetingsPage"
+            Text="MeetingsPage with home changes a"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
