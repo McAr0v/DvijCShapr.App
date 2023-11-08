@@ -4,17 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:DvijCShapr"
-    Shell.FlyoutBehavior="Disabled">
-
-    <!--<ShellContent
-        Title="Мероприятия"
-        ContentTemplate="{DataTemplate local:StockFavPage}"
-        Route="StockFavPage" />
-
-    <ShellContent
-        Title="Мероприятия"
-        ContentTemplate="{DataTemplate local:StocksAllPage}"
-        Route="StocksAllPage" />-->
+    Shell.FlyoutBehavior="Flyout">
 
     <TabBar>
 
@@ -23,7 +13,8 @@
             <ShellContent
                 Title="Мероприятия"
                 ContentTemplate="{DataTemplate local:MeetingsPage}"
-                Route="MeetingsPage" />
+                Route="MeetingsPage"
+                />
             <ShellContent
                 Title="Акции"
                 ContentTemplate="{DataTemplate local:StocksPage}"
@@ -39,5 +30,16 @@
             Route="PlacesPage" />
        
     </TabBar>
+
+    <ShellContent
+        Title="Акции ФАВ"
+        ContentTemplate="{DataTemplate local:StockFavPage}"
+        Route="StockFavPage" />
+
+    <ShellContent
+        Title="Акции Все"
+        ContentTemplate="{DataTemplate local:StocksAllPage}"
+        Route="StocksAllPage" />
+
 
 </Shell>
