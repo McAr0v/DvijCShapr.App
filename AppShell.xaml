@@ -6,6 +6,16 @@
     xmlns:local="clr-namespace:DvijCShapr"
     Shell.FlyoutBehavior="Disabled">
 
+    <!--<ShellContent
+        Title="Мероприятия"
+        ContentTemplate="{DataTemplate local:StockFavPage}"
+        Route="StockFavPage" />
+
+    <ShellContent
+        Title="Мероприятия"
+        ContentTemplate="{DataTemplate local:StocksAllPage}"
+        Route="StocksAllPage" />-->
+
     <TabBar>
 
         <Tab Title="Мероприятия">

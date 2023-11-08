@@ -1,15 +1,9 @@
 namespace DvijCShapr;
 
-public partial class MeetingsPage : TabbedPage
+public partial class MeetingsPage : ContentPage
 {
 	public MeetingsPage()
 	{
-		
-
-        var stockFavPage = new StockFavPage();
-        var stocksAllPage = new StocksAllPage();
-
-        Children.Add(stockFavPage);
-        Children.Add(stocksAllPage);
+        InitializeComponent();
     }
 }
