@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DvijCShapr.Pages.TabbedPageTest"
+            x:DataType="TabbedPage"
+            
+            xmlns:local="clr-namespace:DvijCShapr"
+            xmlns:events="clr-namespace:DvijCShapr.Pages.Events"
+            xmlns:places="clr-namespace:DvijCShapr.Pages.Places"
+            xmlns:promotions="clr-namespace:DvijCShapr.Pages.Promotions"
+            xmlns:otherPages="clr-namespace:DvijCShapr.Pages.Other"
+            Title="Events">
+
+    <events:EventsFavPage Title="Feed Events"/>
+    <ContentPage Title="Tab2"/>
+    <ContentPage Title="Tab3"/>
+
+
+</TabbedPage>

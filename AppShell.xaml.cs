@@ -1,4 +1,7 @@
-﻿namespace DvijCShapr;
+﻿using DvijCShapr.Pages;
+using DvijCShapr.Pages.Events;
+
+namespace DvijCShapr;
 
 
 public partial class AppShell : Shell
@@ -8,7 +11,9 @@ public partial class AppShell : Shell
 		InitializeComponent();
 
 		Routing.RegisterRoute("MeetingsPage", typeof(MeetingsPage));
-	}
+        
+        Routing.RegisterRoute("TabbedPageTest", typeof(EventsFeedPage));
+    }
 
     
 
