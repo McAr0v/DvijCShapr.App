@@ -1,5 +1,6 @@
 ﻿namespace DvijCShapr;
 
+
 public partial class AppShell : Shell
 {
 	public AppShell()
@@ -8,4 +9,8 @@ public partial class AppShell : Shell
 
 		Routing.RegisterRoute("MeetingsPage", typeof(MeetingsPage));
 	}
+
+    
+
+        
 }

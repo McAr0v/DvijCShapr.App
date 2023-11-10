@@ -65,9 +65,9 @@
 
     </TabBar>
 
-    <ShellContent
-        Title="Мероприятия"
-        Route="EventsFeedPage" />
+    <!--<MenuItem Text="О приложении 1"
+              Clicked="GoToAboutApp"
+              />-->
 
     <ShellContent
         Title="О приложении"
