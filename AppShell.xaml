@@ -4,6 +4,10 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:DvijCShapr"
+    xmlns:events="clr-namespace:DvijCShapr.Pages.Events"
+    xmlns:places="clr-namespace:DvijCShapr.Pages.Places"
+    xmlns:promotions="clr-namespace:DvijCShapr.Pages.Promotions"
+    xmlns:otherPages="clr-namespace:DvijCShapr.Pages.Other"
     Shell.FlyoutBehavior="Flyout">
 
     <TabBar>
@@ -11,35 +15,79 @@
         <Tab Title="Мероприятия">
 
             <ShellContent
-                Title="Мероприятия"
-                ContentTemplate="{DataTemplate local:MeetingsPage}"
-                Route="MeetingsPage"
+                Title="Лента"
+                ContentTemplate="{DataTemplate events:EventsFeedPage}"
+                Route="EventsFeedPage"
                 />
             <ShellContent
-                Title="Акции"
-                ContentTemplate="{DataTemplate local:StocksPage}"
-                Route="StocksPage" />
+                Title="Избранные"
+                ContentTemplate="{DataTemplate events:EventsFavPage}"
+                Route="EventsFavPage" />
             <ShellContent
-                Title="Профиль"
-                ContentTemplate="{DataTemplate local:ProfilePage}"
-                Route="ProfilePage" />
+                Title="Мои"
+                ContentTemplate="{DataTemplate events:EventsMyPage}"
+                Route="EventsMyPage" />
             </Tab>
-        <ShellContent
-            Title="Заведения"
-            ContentTemplate="{DataTemplate local:PlacesPage}"
-            Route="PlacesPage" />
-       
+        
+        <Tab Title="Места">
+
+            <ShellContent
+                Title="Все"
+                ContentTemplate="{DataTemplate places:PlacesFeedPage}"
+                Route="PlacesFeedPage"
+                />
+            <ShellContent
+                Title="Избранные"
+                ContentTemplate="{DataTemplate places:PlacesFavPage}"
+                Route="PlacesFavPage" />
+            <ShellContent
+                Title="Мои"
+                ContentTemplate="{DataTemplate places:PlacesFavPage}"
+                Route="PlacesFavPage" />
+        </Tab>
+
+        <Tab Title="Акции">
+
+            <ShellContent
+                Title="Все"
+                ContentTemplate="{DataTemplate promotions:PromotionsFeedPage}"
+                Route="PromotionsFeedPage"
+                />
+            <ShellContent
+                Title="Избранные"
+                ContentTemplate="{DataTemplate promotions:PromotionsFavPage}"
+                Route="PromotionsFavPage" />
+            <ShellContent
+                Title="Мои"
+                ContentTemplate="{DataTemplate promotions:PromotionsMyPage}"
+                Route="PromotionsMyPage" />
+        </Tab>
+
     </TabBar>
 
     <ShellContent
-        Title="Акции ФАВ"
-        ContentTemplate="{DataTemplate local:StockFavPage}"
-        Route="StockFavPage" />
+        Title="Мероприятия"
+        Route="EventsFeedPage" />
 
     <ShellContent
-        Title="Акции Все"
-        ContentTemplate="{DataTemplate local:StocksAllPage}"
-        Route="StocksAllPage" />
+        Title="О приложении"
+        ContentTemplate="{DataTemplate otherPages:AboutAppPage}"
+        Route="AboutAppPage" />
+
+    <ShellContent
+        Title="Политика конфиденциальности"
+        ContentTemplate="{DataTemplate otherPages:PrivacyPolicyPage}"
+        Route="PrivacyPolicyPage" />
+
+    <ShellContent
+        Title="Реклама в приложении"
+        ContentTemplate="{DataTemplate otherPages:AboutAdPage}"
+        Route="AboutAdPage" />
+
+    <ShellContent
+        Title="Написать разработчику"
+        ContentTemplate="{DataTemplate otherPages:FeedbackPage}"
+        Route="FeedbackPage" />
 
 
 </Shell>
