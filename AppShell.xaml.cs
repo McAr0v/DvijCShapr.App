@@ -10,11 +10,11 @@ public partial class AppShell : Shell
 	public AppShell()
 	{
 		InitializeComponent();
-
-		Routing.RegisterRoute("MeetingsPage", typeof(MeetingsPage));
         
         Routing.RegisterRoute("TabbedPageTest", typeof(EventsFeedPage));
         Routing.RegisterRoute("AboutAdPage", typeof(AboutAdPage));
+        Routing.RegisterRoute("FeedbackPage", typeof(FeedbackPage));
+        Routing.RegisterRoute("PrivacyPolicyPage", typeof(PrivacyPolicyPage));
     }
 
     
