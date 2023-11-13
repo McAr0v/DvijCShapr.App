@@ -8,5 +8,10 @@
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Button Text="Перейти к странице о рекламе"
+                Clicked="GoToAdBtn_Clicked"
+                x:Name="GoToAdBtn"
+                />
     </VerticalStackLayout>
 </ContentPage>
