@@ -1,4 +1,4 @@
-﻿using DvijCShapr.Platforms.Android;
+﻿
 using Microsoft.Extensions.Logging;
 
 namespace DvijCShapr;
@@ -13,15 +13,7 @@ public static class MauiProgram
 
         var builder = MauiApp.CreateBuilder();
 		builder
-            .ConfigureMauiHandlers((handlers) =>
-            {
-#if IOS
-                handlers.AddHandler(typeof(Shell), typeof(MyShellRenderer));
-#endif
-#if ANDROID
-                handlers.AddHandler(typeof(Shell), typeof(MyCustomShellRender));
-#endif
-            })
+            
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{

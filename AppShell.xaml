@@ -13,16 +13,18 @@
     Shell.TabBarBackgroundColor="{AppThemeBinding Dark={StaticResource DvijGreyOnBackGround}, Light={StaticResource DvijGreyOnBackGround}}"
     Shell.TabBarUnselectedColor= "{AppThemeBinding Dark={StaticResource DvijGreyText}, Light={StaticResource DvijGreyText}}"
     Shell.TabBarTitleColor="White"
-    
-    
+        
     >
 
-    <TabBar 
-        x:Name="BottomBar">
+    
+
+
+    <TabBar>
 
         <ShellContent
             Title="Профиль"
             ContentTemplate="{DataTemplate profilePages:ProfilePage}"
+            Icon="fire_solid.svg"
             Route="EventsFeedPage"
         />
 
@@ -88,5 +90,7 @@
         </Tab>
 
     </TabBar>
+
+    
 
 </Shell>
