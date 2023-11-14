@@ -41,4 +41,12 @@
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
 
+    <Color x:Key="DvijPrimary">#FED32C</Color>
+    <Color x:Key="DvijGreyOnBackGround">#1A1E23</Color>
+    <Color x:Key="DvijGreyBackground">#202329</Color>
+    <Color x:Key="DvijGreyForCards">#2B3138</Color>
+    <Color x:Key="DvijGreyText">#6E7177</Color>
+    <Color x:Key="DvijWhite">#FCFDFE</Color>
+    <Color x:Key="DvijAttentionRed">#FA5C47</Color>
+
 </ResourceDictionary>

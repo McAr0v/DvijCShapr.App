@@ -15,6 +15,8 @@ public partial class AppShell : Shell
         Routing.RegisterRoute("AboutAdPage", typeof(AboutAdPage));
         Routing.RegisterRoute("FeedbackPage", typeof(FeedbackPage));
         Routing.RegisterRoute("PrivacyPolicyPage", typeof(PrivacyPolicyPage));
+
+        
     }
 
     
