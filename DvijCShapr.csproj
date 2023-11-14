@@ -58,6 +58,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\fire_solid.svg" />
+	  <None Remove="Resources\Images\location_dot_solid.svg" />
 	</ItemGroup>
 
 	<ItemGroup>

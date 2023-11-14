@@ -9,22 +9,34 @@
     xmlns:promotions="clr-namespace:DvijCShapr.Pages.Promotions"
     xmlns:otherPages="clr-namespace:DvijCShapr.Pages.Other"
     xmlns:profilePages="clr-namespace:DvijCShapr.Pages.Profile"
-    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutBehavior="Flyout"
     Shell.TabBarBackgroundColor="{AppThemeBinding Dark={StaticResource DvijGreyOnBackGround}, Light={StaticResource DvijGreyOnBackGround}}"
     Shell.TabBarUnselectedColor= "{AppThemeBinding Dark={StaticResource DvijGreyText}, Light={StaticResource DvijGreyText}}"
     Shell.TabBarTitleColor="White"
+    
         
     >
 
+    <Shell.ToolbarItems>
+        
     
+        <ToolbarItem Text="Привет"
+         Shell.BackgroundColor="Black"
+         Clicked="ToolbarItem_Clicked"
+        
+                     />
 
+    </Shell.ToolbarItems>
+
+
+    
 
     <TabBar>
 
         <ShellContent
             Title="Профиль"
             ContentTemplate="{DataTemplate profilePages:ProfilePage}"
-            Icon="fire_solid.svg"
+            
             Route="EventsFeedPage"
         />
 
@@ -45,7 +57,7 @@
         Route="EventsMyPage" />
         </Tab>
 
-        <Tab Title="Места">
+        <Tab Title="Места" Icon="location_dot_solid.svg">
 
             <ShellContent
         Title="Все места"
@@ -62,7 +74,7 @@
         Route="PlacesMyPage" />
         </Tab>
 
-        <Tab Title="Акции">
+        <Tab Title="Акции" Icon="fire_solid.svg">
 
             <ShellContent
                 Title="Все акции"
@@ -79,18 +91,10 @@
                 Route="PromotionsMyPage" />
         </Tab>
 
-        <Tab Title="О приложении">
-
-            <ShellContent
-                Title="Все акции"
-                ContentTemplate="{DataTemplate otherPages:AboutAppPage}"
-                Route="PromotionsFeedPage"
-             />
-            
-        </Tab>
+        
 
     </TabBar>
 
-    
+    <MenuItem Text="О приложении" Clicked="MenuItem_Clicked"></MenuItem>
 
 </Shell>
