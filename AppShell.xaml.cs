@@ -12,6 +12,8 @@ public partial class AppShell : Shell
 	{
 		InitializeComponent();
         
+        // Регистрируем пути к страницам
+
         Routing.RegisterRoute("TabbedPageTest", typeof(EventsFeedPage));
         Routing.RegisterRoute("AboutAdPage", typeof(AboutAdPage));
         Routing.RegisterRoute("FeedbackPage", typeof(FeedbackPage));
@@ -20,6 +22,9 @@ public partial class AppShell : Shell
         Routing.RegisterRoute("AboutAppPage", typeof(AboutAppPage));
 
         
+
+
+
     }
 
     private async void ToolbarItem_Clicked(object sender, EventArgs e)
@@ -27,10 +32,28 @@ public partial class AppShell : Shell
         await Shell.Current.GoToAsync("ProfilePage");
     }
 
-    private async void MenuItem_Clicked(object sender, EventArgs e)
+    private async void AboutAppBtn_Clicked(object sender, EventArgs e)
     {
         Shell.Current.FlyoutIsPresented = false;
         await Shell.Current.GoToAsync("AboutAppPage");
                
+    }
+
+    private async void PrivacyPolicyBtn_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = false;
+        await Shell.Current.GoToAsync("PrivacyPolicyPage");
+    }
+
+    private async void AboutAdBtn_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = false;
+        await Shell.Current.GoToAsync("AboutAdPage");
+    }
+
+    private async void FeedbackBtn_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = false;
+        await Shell.Current.GoToAsync("FeedbackPage");
     }
 }

@@ -12,22 +12,34 @@
     Shell.FlyoutBehavior="Flyout"
     Shell.TabBarBackgroundColor="{AppThemeBinding Dark={StaticResource DvijGreyOnBackGround}, Light={StaticResource DvijGreyOnBackGround}}"
     Shell.TabBarUnselectedColor= "{AppThemeBinding Dark={StaticResource DvijGreyText}, Light={StaticResource DvijGreyText}}"
-    Shell.TabBarTitleColor="White"
-    
+    Shell.TabBarTitleColor="{AppThemeBinding Dark={StaticResource DvijPrimary}, Light={StaticResource DvijPrimary}}"
+    Shell.BackgroundColor="{AppThemeBinding Dark={StaticResource DvijGreyOnBackGround}, Light={StaticResource DvijGreyOnBackGround}}"
         
     >
+    <!--<Shell.FlyoutBackground>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,1">
+            <GradientStop Color="#8A2387"
+                          Offset="0.1" />
+            <GradientStop Color="#E94057"
+                          Offset="0.6" />
+            <GradientStop Color="#F27121"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </Shell.FlyoutBackground>-->
 
     <Shell.ToolbarItems>
         
     
-        <ToolbarItem Text="Привет"
-         Shell.BackgroundColor="Black"
-         Clicked="ToolbarItem_Clicked"
+        <ToolbarItem
+            
+            Text="Привет"
+            Shell.BackgroundColor="Black"
+            Clicked="ToolbarItem_Clicked"
         
                      />
 
     </Shell.ToolbarItems>
-
 
     
 
@@ -36,11 +48,11 @@
         <ShellContent
             Title="Профиль"
             ContentTemplate="{DataTemplate profilePages:ProfilePage}"
-            
+            Icon="user_solid.svg"
             Route="EventsFeedPage"
         />
 
-        <Tab Title="Мероприятия">
+        <Tab Title="Мероприятия" Icon="ic_celebration.xml">
 
             <ShellContent
         Title="Лента"
@@ -95,6 +107,45 @@
 
     </TabBar>
 
-    <MenuItem Text="О приложении" Clicked="MenuItem_Clicked"></MenuItem>
+    
+
+    
+
+
+    <MenuItem 
+        x:Name="AboutApp"
+        IconImageSource="circle_info_solid.svg"
+        Text="О приложении" 
+        Clicked="AboutAppBtn_Clicked">
+
+    </MenuItem>
+
+    <MenuItem 
+        x:Name="PrivacyPolicyBtn"
+        IconImageSource="shield_halved_solid.svg"
+        Text="Политика конфиденциальности" 
+        Clicked="PrivacyPolicyBtn_Clicked">
+
+    </MenuItem>
+
+    <MenuItem 
+        x:Name="AboutAdBtn"
+        IconImageSource="rectangle_ad_solid.svg"
+        Text="Реклама" 
+        Clicked="AboutAdBtn_Clicked" >
+
+    </MenuItem>
+
+    <MenuItem 
+        x:Name="FeedbackBtn"
+        IconImageSource="bug_solid.svg"
+        Text="Обратная связь" 
+        Clicked="FeedbackBtn_Clicked">
+
+    </MenuItem>
+    
+    
+
+    
 
 </Shell>

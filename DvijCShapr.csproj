@@ -57,8 +57,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\bug_solid.svg" />
+	  <None Remove="Resources\Images\circle_info_solid.svg" />
 	  <None Remove="Resources\Images\fire_solid.svg" />
+	  <None Remove="Resources\Images\ic_celebration.xml" />
 	  <None Remove="Resources\Images\location_dot_solid.svg" />
+	  <None Remove="Resources\Images\rectangle_ad_solid.svg" />
+	  <None Remove="Resources\Images\shield_halved_solid.svg" />
+	  <None Remove="Resources\Images\user_solid.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -121,6 +127,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Promotions\PromotionsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\MyTheme.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
